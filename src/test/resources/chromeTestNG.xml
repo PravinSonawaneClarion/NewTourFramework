@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Suite">
+
+	<parameter name="environment" value="local"/>
+	<parameter name="browser" value="chrome"/>
+	<parameter name="os" value="windows 7"/>
+	
+	<test name="Login Test on Chrome"> 
+	    
+	<classes>
+	       
+	          <class name="functionality.loginPageTest">
+	         	<methods>
+	         		<include name="LoginPageScenarioTest"/>
+				</methods>
+	         </class>
+	         
+	    </classes>
+ 	</test> <!-- Test -->
+  
+</suite> <!-- Suite -->
